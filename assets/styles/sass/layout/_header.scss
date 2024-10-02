@@ -1,0 +1,59 @@
+@use "color";
+@use "utilties";
+header {
+  background-image: url("/assets/images/slide-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 700px;
+  .container {
+    @extend %flex-width-margin;
+    nav {
+      @extend %flex-center-between;
+      padding-top: 30px;
+      ul {
+        display: none;
+        li a {
+         text-decoration: none;
+         color: black;
+         
+        }
+      }
+      a {
+        text-decoration: none;
+        display: none;
+      }
+      .icon-bar {
+        @extend %flex-center-center;
+        background-color: white;
+        padding: 7px;
+        /*    background-color: $bg-card; */
+        border-radius: 5px;
+      }
+    }
+    .header__content {
+      margin-top: 100px;
+      .container {
+        @extend %flex-width-margin;
+        @extend %flex-center-center;
+        flex-direction: column;
+        text-align: center;
+        p {
+          padding-top: 18px;
+        }
+        button {
+          @extend %btn;
+          width: 90%;
+          @extend %flex-center-center;
+          /*  color: $bg-card; */
+          margin-top: 32px;
+          margin-bottom: 32px;
+
+        }
+        span{
+          color: white;
+        }
+      }
+    }
+  }
+}
