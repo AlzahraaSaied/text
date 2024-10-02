@@ -1,0 +1,266 @@
+@use "utilties";
+main {
+  .city-view {
+    width: 100%;
+    .container {
+      @extend %flex-width-margin;
+      padding-top: 50px;
+
+      .card-view {
+        display: flex;
+        gap: 20px;
+        overflow-x: hidden;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .card {
+          @extend %card;
+          margin-top: 48px;
+          .card__content {
+            @extend %card-content;
+            p {
+              padding-top: 10px;
+            }
+          }
+        }
+        .card--istanbul {
+          background-image: url(/assets/images/istanbul.png);
+        }
+        .card--dubai {
+          background-image: url(/assets/images/dubai.png);
+        }
+        .card--cairo {
+          background-image: url(/assets/images/cairo.png);
+        }
+        .card--riyadth {
+          background-image: url(/assets/images/riyadh.png);
+        }
+      }
+    }
+  }
+
+  .services {
+    /* width: 100%; */
+    .container {
+      @extend %flex-width-margin;
+      padding-top: 50px;
+      text-align: center;
+      .services__content {
+        border-radius: 25px;
+        background-color: #f1effd;
+        margin-top: 18px;
+
+        .container {
+          @extend %flex-width-margin;
+          @extend %flex-center-center;
+          flex-direction: column;
+          .content__item {
+            @extend %flex-center-center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            span,
+            p {
+              margin-top: 20px;
+            }
+            figure {
+              width: 140px;
+              height: 140px;
+              img {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reviews {
+/*     width: 100%;
+ */    padding-top: 50px;
+    .container {
+      @extend %flex-width-margin;
+      span , h3{
+        padding-bottom: 20px;
+      }
+      .card-item {
+        border-radius: 15px;
+        background-color: #f1effd;
+        margin-bottom: 18px;
+        .container {
+          @extend %flex-width-margin;
+          
+
+          .card-item__content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0 20px 0;
+            p{
+                padding-top: 20px;
+            }
+            .card-item__content__user {
+              display: flex;
+              align-items: center;
+              margin-top: 20px;
+              gap: 15px;
+              figure {
+                width: 50px;
+                height: 50px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .prices {
+/*     width: 100%;
+ */    .container {
+      @extend %flex-width-margin;
+      flex-direction: column;
+      padding-top: 20px;
+      .price__wrapper {
+        position: relative;
+        margin-top: 50px;
+        .background-box {
+          position: absolute;
+          background-color: #000;
+          border-radius: 20px;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+        .price__card {
+          position: relative;
+          background-color: #ffe7ac;
+          padding: 20px;
+          border-radius: 15px;
+          border: 1.5px solid #191919;
+          width: 100%;
+          height: 100%;
+          bottom: 10px;
+          right: 10px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          hr{
+            background-color: #4C4C4C;
+            margin: 10px  0 10px 0;
+
+          }
+          button {
+            @extend %price-btn;
+          }
+          h2,
+          h3,
+          p,
+          ul li {
+            padding: 10px 0 10px 0;
+          }
+          ul li {
+            list-style-type: none;
+          }
+        }
+        .price__card--blue {
+          background-color: map-get($colors,card-bbg );
+          color:map-get($colors , primary-text);
+        }
+      }
+    }
+  }
+  .connections {
+/*     width: 100%;
+ */    .container {
+      @extend %flex-width-margin;
+      
+      .form-wrapper {
+        position: relative;
+        margin-top: 50px;
+        @extend %flex-center-center;
+
+        .background-box {
+          position: absolute;
+          background-color: map-get($colors ,  primary-bg );
+          border-radius: 20px;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+
+        .contact-form {
+          position: relative;
+          background-color: #ffe7ac;
+          padding: 20px;
+          border-radius: 15px;
+          border: 1.5px solid #191919;
+          width: 100%;
+          height: 100%;
+          bottom: 10px;
+          right: 10px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .form-group {
+            display: flex;
+            flex-direction: column;
+          }
+
+          label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #000;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #fff;
+          }
+
+          textarea {
+            resize: none;
+          }
+
+          button {
+            @extend %btn-form;
+            transition: background-color 0.3s;
+          }
+        }
+      }
+      .connections__content {
+        border-radius: 25px;
+        @extend %flex-center-center;
+        flex-direction: column;
+        .content__item {
+          @extend %flex-center-center;
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+          figure {
+            width: 140px;
+            height: 140px;
+            & img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

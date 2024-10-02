@@ -1,0 +1,555 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+}
+
+main .city-view .container .card-view .card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-width: 235px;
+  min-height: 371px;
+}
+
+main .city-view .container .card-view .card .card__content {
+  border-radius: 16px;
+  position: absolute;
+  background-color: white;
+  bottom: 20px;
+  right: 10px;
+  left: 10px;
+  padding: 10px 10px;
+}
+
+header .container .header__content .container button {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  background-color: #FEC430;
+  box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.1019607843);
+  outline: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+main .connections .container .form-wrapper .contact-form button {
+  border-radius: 15px;
+  padding: 12px 30px 12px 24px;
+  margin-top: 15px;
+  background-color: #191919;
+  color: white;
+  outline: none;
+  text-align: center;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+main .prices .container .price__wrapper .price__card button {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 12px 30px 12px 24px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .services .container .services__content .container, main .services .container .services__content .container .content__item, main .connections .container .form-wrapper, main .connections .container .connections__content, main .connections .container .connections__content .content__item, header .container nav .icon-bar, header .container .header__content .container, header .container .header__content .container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-container, main .city-view .container, main .services .container, main .services .container .services__content .container, main .reviews .container, main .reviews .container .card-item .container, main .prices .container, main .connections .container, header .container, header .container .header__content .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("/assets/images/slide-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 700px;
+}
+header .container nav {
+  padding-top: 30px;
+}
+header .container nav ul {
+  display: none;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .container nav a {
+  text-decoration: none;
+  display: none;
+}
+header .container nav .icon-bar {
+  background-color: white;
+  padding: 7px;
+  /*    background-color: $bg-card; */
+  border-radius: 5px;
+}
+header .container .header__content {
+  margin-top: 100px;
+}
+header .container .header__content .container {
+  flex-direction: column;
+  text-align: center;
+}
+header .container .header__content .container p {
+  padding-top: 18px;
+}
+header .container .header__content .container button {
+  width: 90%;
+  /*  color: $bg-card; */
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+header .container .header__content .container span {
+  color: white;
+}
+
+main .city-view {
+  width: 100%;
+}
+main .city-view .container {
+  padding-top: 50px;
+}
+main .city-view .container .card-view {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+main .city-view .container .card-view .card {
+  margin-top: 48px;
+}
+main .city-view .container .card-view .card .card__content p {
+  padding-top: 10px;
+}
+main .city-view .container .card-view .card--istanbul {
+  background-image: url(/assets/images/istanbul.png);
+}
+main .city-view .container .card-view .card--dubai {
+  background-image: url(/assets/images/dubai.png);
+}
+main .city-view .container .card-view .card--cairo {
+  background-image: url(/assets/images/cairo.png);
+}
+main .city-view .container .card-view .card--riyadth {
+  background-image: url(/assets/images/riyadh.png);
+}
+main .services {
+  /* width: 100%; */
+}
+main .services .container {
+  padding-top: 50px;
+  text-align: center;
+}
+main .services .container .services__content {
+  border-radius: 25px;
+  background-color: #f1effd;
+  margin-top: 18px;
+}
+main .services .container .services__content .container {
+  flex-direction: column;
+}
+main .services .container .services__content .container .content__item {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+main .services .container .services__content .container .content__item span,
+main .services .container .services__content .container .content__item p {
+  margin-top: 20px;
+}
+main .services .container .services__content .container .content__item figure {
+  width: 140px;
+  height: 140px;
+}
+main .services .container .services__content .container .content__item figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main .reviews {
+  /*     width: 100%;
+   */
+  padding-top: 50px;
+}
+main .reviews .container span, main .reviews .container h3 {
+  padding-bottom: 20px;
+}
+main .reviews .container .card-item {
+  border-radius: 15px;
+  background-color: #f1effd;
+  margin-bottom: 18px;
+}
+main .reviews .container .card-item .container .card-item__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+main .reviews .container .card-item .container .card-item__content p {
+  padding-top: 20px;
+}
+main .reviews .container .card-item .container .card-item__content .card-item__content__user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+main .reviews .container .card-item .container .card-item__content .card-item__content__user figure {
+  width: 50px;
+  height: 50px;
+}
+main .reviews .container .card-item .container .card-item__content .card-item__content__user figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+main .prices {
+  /*     width: 100%;
+   */
+}
+main .prices .container {
+  flex-direction: column;
+  padding-top: 20px;
+}
+main .prices .container .price__wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+main .prices .container .price__wrapper .background-box {
+  position: absolute;
+  background-color: #000;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main .prices .container .price__wrapper .price__card {
+  position: relative;
+  background-color: #ffe7ac;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1.5px solid #191919;
+  width: 100%;
+  height: 100%;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .prices .container .price__wrapper .price__card hr {
+  background-color: #4C4C4C;
+  margin: 10px 0 10px 0;
+}
+main .prices .container .price__wrapper .price__card h2,
+main .prices .container .price__wrapper .price__card h3,
+main .prices .container .price__wrapper .price__card p,
+main .prices .container .price__wrapper .price__card ul li {
+  padding: 10px 0 10px 0;
+}
+main .prices .container .price__wrapper .price__card ul li {
+  list-style-type: none;
+}
+main .prices .container .price__wrapper .price__card--blue {
+  background-color: #46368b;
+  color: white;
+}
+main .connections {
+  /*     width: 100%;
+   */
+}
+main .connections .container .form-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+main .connections .container .form-wrapper .background-box {
+  position: absolute;
+  background-color: #000;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main .connections .container .form-wrapper .contact-form {
+  position: relative;
+  background-color: #ffe7ac;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1.5px solid #191919;
+  width: 100%;
+  height: 100%;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .connections .container .form-wrapper .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+main .connections .container .form-wrapper .contact-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #000;
+}
+main .connections .container .form-wrapper .contact-form input,
+main .connections .container .form-wrapper .contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+}
+main .connections .container .form-wrapper .contact-form textarea {
+  resize: none;
+}
+main .connections .container .form-wrapper .contact-form button {
+  transition: background-color 0.3s;
+}
+main .connections .container .connections__content {
+  border-radius: 25px;
+  flex-direction: column;
+}
+main .connections .container .connections__content .content__item {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+main .connections .container .connections__content .content__item figure {
+  width: 140px;
+  height: 140px;
+}
+main .connections .container .connections__content .content__item figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .footer-container .footer-logo h2 {
+  font-size: 24px;
+  color: #FEC430;
+}
+.footer .footer-container .footer-logo p {
+  font-size: 14px;
+  color: #B0B0B0;
+  max-width: 250px;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.footer .footer-container .footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping for columns */
+  /*         justify-content: center; */ /* Center the columns */
+  gap: 15px;
+}
+.footer .footer-container .footer-links .footer-column {
+  flex-basis: 45%; /* Each column takes about half of the row */
+  margin-bottom: 20px;
+}
+.footer .footer-container .footer-links .footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .footer-container .footer-links .footer-column ul {
+  list-style: none;
+  /*   padding: 0; */
+}
+.footer .footer-container .footer-links .footer-column ul li {
+  color: #B0B0B0;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.footer .footer-bottom {
+  margin-top: 20px;
+}
+.footer .footer-bottom p {
+  font-size: 12px;
+  color: #B0B0B0;
+}
+.footer .footer-bottom .social-icons {
+  margin-top: 10px;
+}
+.footer .footer-bottom .social-icons a {
+  color: #B0B0B0;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.footer .footer-bottom .social-icons a:hover {
+  color: #FEC430;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+  header .header__content {
+    margin-top: 200px;
+  }
+  header .header__content .container button {
+    width: 200px !important;
+  }
+  header .header__content .container p {
+    padding-top: 30px;
+  }
+  header .container nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+  }
+  header .container nav a {
+    text-decoration: none;
+    color: white;
+  }
+  header .container nav .icon-bar {
+    display: none;
+  }
+  .city-view .container {
+    padding-top: 80px;
+  }
+  .city-view .container .card-view .card {
+    width: 380px;
+    height: 500px;
+  }
+  .services .container .services__content .container {
+    flex-direction: row !important;
+    gap: 50px;
+  }
+  .prices > .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row !important;
+  }
+  .prices > .container .card__wrapper--blue {
+    margin-bottom: 100px;
+  }
+  .reviews > .container {
+    display: flex;
+    flex-direction: row !important;
+    gap: 20px;
+  }
+  .connections > .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row !important;
+  }
+  .connections > .container .form-wrapper {
+    width: 630px;
+    height: 400px;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: "Arial, sans-serif";
+  }
+  .footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer .footer-container .footer-logo {
+    flex-basis: 20%; /* Adjusted to fit the layout */
+  }
+  .footer .footer-container .footer-logo h2 {
+    font-size: 24px;
+    color: #fec430;
+  }
+  .footer .footer-container .footer-logo p {
+    font-size: 14px;
+    color: #b0b0b0;
+    max-width: 250px;
+  }
+  .footer .footer-container .footer-links {
+    display: flex;
+    flex-basis: 75%; /* Adjusted to accommodate 3 or 4 columns */
+    justify-content: space-between;
+  }
+  .footer .footer-container .footer-links .footer-column {
+    flex-basis: 23%; /* Four columns with some space in between */
+  }
+  .footer .footer-container .footer-links .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer .footer-container .footer-links .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .footer-container .footer-links .footer-column ul li {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+  }
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+  }
+  .footer .footer-bottom p {
+    font-size: 12px;
+    color: #b0b0b0;
+  }
+  .footer .footer-bottom .social-icons {
+    margin-top: 10px;
+  }
+  .footer .footer-bottom .social-icons a {
+    color: #b0b0b0;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  .footer .footer-bottom .social-icons a:hover {
+    color: #fec430;
+  }
+}/*# sourceMappingURL=style.css.map */
